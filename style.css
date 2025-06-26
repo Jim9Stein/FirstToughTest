@@ -17,16 +17,9 @@ Landing
  padding: 0 32px;
 }
 
-.row {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    color: rgb(36, 62, 99);
-    font-weight: bold;
-    font-size: 24px;
-    display: flex;
-    height: 60px;
-    justify-content: space-between;
+.container {
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .nav {
@@ -34,6 +27,12 @@ Landing
     justify-content: space-between;
     align-items: center;
     padding-top: 32px;
+}
+
+.nav__row {
+   display: flex;
+   height: 60px; 
+   justify-content: space-between;
 }
 
 .nav__logo {
@@ -45,6 +44,7 @@ Landing
    height: 44px;
    margin: 8px 0;
 }
+
 
 .nav__logo--img {
     display: block;
@@ -80,6 +80,7 @@ Landing
 .button {
     cursor: pointer;
     transition: all 300ms ease;
+    background: transparent;
 }
 
 /*
@@ -89,7 +90,7 @@ Beautiful React
 */
 
 .container {
-    display: block;
+    display: flex;
     padding: 96px 0;
 }
 
@@ -102,10 +103,64 @@ Beautiful React
     align-items: center;
 }
 
-.h1 {
-   display: flex;
-   flex-direction: column; 
-   color: purple;
+
+.header__description { 
+    flex-direction: column;
+    width: 40%;
+}
+
+
+.purple {
+    color: purple;
+}
+
+.header__description--para {
+    font-size: 16px;
+    margin: 32px 0;
+}
+
+.heading__img--wrapper {
+    display: flex;
+    justify-content: flex-end;
+    width: calc(100% - 40%);
+}
+
+.header__email {
+    width: 100%;
+    max-width: 448px;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.header__email--input {
+    width: 100%;
+    border-radius: 500px;
+    border: 2px solid rgb(229, 231, 235);
+    padding: 20px 192px 20px 32px;
+    color: rgb(36, 62, 99);
+    font-size: 16px;
+    font-weight: 500;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    transition: border-color 300ms;
+}
+
+.header__email--button {
+    z-index: 2;
+    margin: 8px;
+    height: calc(100% - 16px);
+    border-radius: 500px;
+    width: 160px;
+    border: none;
+    background-color: purple;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    transition: all 300ms;
 }
 
 
