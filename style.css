@@ -13,13 +13,17 @@ Landing
 
 */
 
-.landing {
- padding: 0 32px;
+.body {
+    display: block;
+    padding: 0, 32px, 0, 32px;
+    max-width: 100vw;
+    overflow-x: hidden;
 }
 
-.container {
-    padding-top: 96px;
-    padding-bottom: 96px;
+.landing {
+ padding: 0 32px;
+ display: block;
+ unicode-bidi: isolate;
 }
 
 .nav {
@@ -27,14 +31,19 @@ Landing
     justify-content: space-between;
     align-items: center;
     padding-top: 32px;
+    unicode-bidi: isolate;
 }
 
 .nav__row {
    display: flex;
+   width: 100%;
+   max-width: 1200px;
+   margin: 0 auto;
    height: 60px; 
    justify-content: space-between;
+   unicode-bidi: isolate;
 }
-
+   
 .nav__logo {
    color: #243e63;
    margin: 8px 0;
@@ -76,6 +85,20 @@ Landing
     font-weight: 600;
     border-bottom: 2px solid;
 }
+.container {
+    border: 4px solid black;
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+
+
+
+
+
 
 .button {
     cursor: pointer;
@@ -106,7 +129,8 @@ Beautiful React
 
 .header__description { 
     flex-direction: column;
-    width: 40%;
+    width: 40%
+
 }
 
 
@@ -119,10 +143,10 @@ Beautiful React
     margin: 32px 0;
 }
 
-.heading__img--wrapper {
+.heading__img {
     display: flex;
     justify-content: flex-end;
-    width: calc(100% - 40%);
+    width: calc(100% - 10%);
 }
 
 .header__email {
