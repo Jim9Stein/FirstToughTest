@@ -201,13 +201,21 @@ input {
     justify-content: flex-end;
 }
 
-.header__customer {
+.header__customers {
     padding-right: 64px;
     margin-top: 16px;
 }
 
 img {
     width: 100%;
+}
+
+.header__customers--title {
+    margin-top: 80px 0px 0px;
+    color: #a0aec0;
+    font-size: 12px;
+    font-weight: 700;
+    margin: 80px;
 }
 
 
